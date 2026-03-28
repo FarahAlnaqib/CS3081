@@ -11,7 +11,7 @@ Expression:
 | F | F | F | T | T |
 
 ## Explanation
-The expression is always true for all values of P and Q, so it is a tautology.
+The expression is true for all possible combinations of P and Q, therefore it is a tautology.
 
 
 ## Verification using model_check()
