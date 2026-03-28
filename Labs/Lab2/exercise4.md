@@ -90,19 +90,19 @@ green3: YES
 
 ## Explanation
 
-Yes, the third clue completely solves the puzzle.
+Yes, the third clue allows the puzzle to be completely solved.
 
 From Feedback 2, we know:
-- `blue0` is false
-- `red1` is false
-- `green2` is false
-- `yellow3` is false
+- `blue0` is false  
+- `red1` is false  
+- `green2` is false  
+- `yellow3` is false  
 
 From Feedback 3, we also know:
-- `blue0` is false
-- `green1` is false
-- `red2` is false
-- `yellow3` is false
+- `blue0` is false  
+- `green1` is false  
+- `red2` is false  
+- `yellow3` is false  
 
 Now go back to Feedback 1, which says exactly 2 of these are correct:
 - `red0`
@@ -111,28 +111,27 @@ Now go back to Feedback 1, which says exactly 2 of these are correct:
 - `yellow3`
 
 But Feedback 2 already proves that:
-- `green2` is false
-- `yellow3` is false
+- `green2` is false  
+- `yellow3` is false  
 
 So the only way Feedback 1 can still have exactly 2 correct positions is:
-- `red0` = true
-- `blue1` = true
+- `red0` = true  
+- `blue1` = true  
 
 Now positions 0 and 1 are fixed:
-- Position 0 = red
-- Position 1 = blue
+- Position 0 = red  
+- Position 1 = blue  
 
 The remaining colors are green and yellow for positions 2 and 3.
 
-But Feedback 2 says `green2` is false, so green cannot be in position 2.
-Therefore:
-- `green3` = true
-- `yellow2` = true
+But Feedback 2 says `green2` is false, so green cannot be in position 2. Therefore:
+- `green3` = true  
+- `yellow2` = true  
 
 So the full solution is:
-- Position 0 = red
-- Position 1 = blue
-- Position 2 = yellow
-- Position 3 = green
+- Position 0 = red  
+- Position 1 = blue  
+- Position 2 = yellow  
+- Position 3 = green  
 
-This means the puzzle is fully solved, and there are no MAYBE results left.
+Therefore, model_check() can determine all variables with certainty (no MAYBE values), and the puzzle is fully solved.
