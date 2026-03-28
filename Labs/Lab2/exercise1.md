@@ -12,3 +12,32 @@ Expression:
 
 ## Explanation
 The expression is always true for all values of P and Q, so it is a tautology.
+
+
+## Verification using model_check()
+
+```python
+from logic import *
+
+P = Symbol("P")
+Q = Symbol("Q")
+
+sentence = Implication(And(P, Q), Or(P, Not(Q)))
+
+models = [
+    {"P": True, "Q": True},
+    {"P": True, "Q": False},
+    {"P": False, "Q": True},
+    {"P": False, "Q": False}
+]
+
+for model in models:
+    print(model, "->", sentence.evaluate(model))
+
+{'P': True, 'Q': True} -> True
+{'P': True, 'Q': False} -> True
+{'P': False, 'Q': True} -> True
+{'P': False, 'Q': False} -> True
+
+
+
