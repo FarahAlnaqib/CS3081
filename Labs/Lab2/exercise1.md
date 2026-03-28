@@ -33,8 +33,13 @@ models = [
 
 for model in models:
     print(model, "->", sentence.evaluate(model))
+```
 
+### Output
 
-
-
-
+```
+{'P': True, 'Q': True} -> True
+{'P': True, 'Q': False} -> True
+{'P': False, 'Q': True} -> True
+{'P': False, 'Q': False} -> True
+```
