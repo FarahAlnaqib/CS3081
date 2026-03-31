@@ -58,8 +58,8 @@ Built a logical AI agent using propositional logic.
 ---
 
 ## 👩‍💻 Author
-Name: Your Name  
-Student ID: Your ID  
+Name: Farah Alnaqib 
+Student ID: S22107915 
 
 ---
 
