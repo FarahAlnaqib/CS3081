@@ -21,3 +21,7 @@ Makkah → Jeddah → Madinah
 Yes, this is the shortest path.
 
 BFS explores the graph level by level and guarantees finding the shortest path in terms of number of edges. The path from Makkah to Madinah through Jeddah is the most direct route.
+
+## Output Screenshot
+
+![Exercise 1 Output](images/exercise1_output.png)
