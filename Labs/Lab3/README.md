@@ -26,7 +26,7 @@ Implemented Breadth-First Search (BFS) to find the shortest path.
 
 **Example Path:**
 
-
+Makkah → Taif → Abha
 
 ---
 
